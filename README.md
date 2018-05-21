@@ -79,6 +79,53 @@ Stage5:
 
 ### Passwords
 
+Ask for first, third and fifth dial.
+Filter garbage letter using:
+
+* position 1: a b c e f g h l n o p r s t w
+* position 3: a e g h i l o r t u v
+* position 5: d e g h k l n r t w y
+
+Then match word:
+
+```
+#1 #3 #5
+a  a  n -> again
+   o  t -> about
+   t  r -> after
+b  l  w -> below
+c  u  d -> could
+e  e  y -> every
+f  r  t -> first
+   u  d -> found
+g  e  t -> great
+h  u  e -> house
+l  a  n -> learn
+   r  e -> large
+n  v  r -> never
+o  h  r -> other
+p  a  e -> place
+      t -> plant
+   i  t -> point
+r  g  t -> right
+s  a  l -> small
+   e  l -> spell
+   i  l -> still
+   u  d -> sound
+      y -> study
+t  e  e -> these / there
+      r -> their
+   i  g -> thing
+      k -> think
+   r  e -> three
+w  e  e -> where
+   i  e -> write
+      h -> which
+   r  d -> world
+   t  r -> water
+   u  d -> would
+```
+
 ## Needy
 ### Knobs
 LEDs configurations:
