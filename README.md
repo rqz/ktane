@@ -3,4 +3,4 @@ Sleek version of the bomb manual for the game "Keeping Talking and Nobody Explod
 
 ### Morse
 
-![](img/morse.svg?sanitize=true)
+<img src="img/morse.svg?sanitize=true" width="400">
