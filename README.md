@@ -34,6 +34,8 @@ S5: doesn't matter
 ```
 with P and L, respectively, each position and label pressed for each stage.
 
+Procedure :
+```
 Stage1:
 1 => P2
 2 => P2
@@ -63,6 +65,7 @@ Stage5:
 2 => LS2
 3 => LS4
 4 => LS3
+```
 
 ### Morse Code
 
@@ -78,3 +81,23 @@ Stage5:
 
 ## Needy
 ### Knobs
+notation:
+```
+T = Top led on
+B = Bottom led on
+A = Both leds on
+N = None, both leds off
+```
+LEDs configurations:
+
+UP:
+BBABTA / TBANAB
+
+Down:
+BAABNB / TBTNTB
+
+Left:
+BNNBAB / NNNBAN
+
+Right:
+ABATAT / ABATBN
