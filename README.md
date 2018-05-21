@@ -81,6 +81,12 @@ Stage5:
 
 ## Needy
 ### Knobs
+LEDs configurations:
+Up:
+
+| | |X| |X|X|
+|X|X|X|X| |x|
+
 notation:
 ```
 T = Top led on
