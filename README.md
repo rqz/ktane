@@ -3,11 +3,11 @@ Sleek version of the bomb manual for the game "Keeping Talking and Nobody Explod
 
 ### Horizontal Wires
 
-<img src="img/horizontal.wires.svg?sanitize=true" width="400">
+<img src="img/horizontal.wires.svg?sanitize=true" width="800">
 
 ### Buttons
 
-<img src="img/buttons.svg?sanitize=true" width="400">
+<img src="img/buttons.svg?sanitize=true" width="200">
 
 ### Keypads
 
