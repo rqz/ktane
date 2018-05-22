@@ -79,52 +79,44 @@ Stage5:
 
 ### Passwords
 
-Ask for first, third and fifth dial.
-Filter garbage letter using:
-
-* position 1: a b c e f g h l n o p r s t w
-* position 3: a e g h i l o r t u v
-* position 5: d e g h k l n r t w y
-
-Then match word:
+Do a **TEA** pass (defuser go through all the dials looking only for **t**, **e**, **a**)
+Then match against the table:
 
 ```
-#1 #3 #5
-a  a  n -> again
-   o  t -> about
-   t  r -> after
-b  l  w -> below
-c  u  d -> could
-e  e  y -> every
-f  r  t -> first
-   u  d -> found
-g  e  t -> great
-h  u  e -> house
-l  a  n -> learn
-   r  e -> large
-n  v  r -> never
-o  h  r -> other
-p  a  e -> place
-      t -> plant
-   i  t -> point
-r  g  t -> right
-s  a  l -> small
-   e  l -> spell
-   i  l -> still
-   u  d -> sound
-      y -> study
-t  e  e -> these / there
-      r -> their
-   i  g -> thing
-      k -> think
-   r  e -> three
-w  e  e -> where
-   i  e -> write
-      h -> which
-   r  d -> world
-   t  r -> water
-   u  d -> would
+----e house
+----t first point right (#1 dial contains f / p / r)
+---te write
+--a-- small
+--a-e place
+--a-t plant
+--e-- spell
+--e-e where
+--eat great
+-a--e large
+-ate- water
+-e--- below
+-e-e- never
+-ea-- learn
+-t--- still study (#3 dial contains i / u)
+-t-e- other
+a---t about
+a-a-- again
+a-te- after
+e-e-- every
+t---- thing think (#5 dial contains g / k)
+t--ee three
+t-e-- their
+t-e-e there these (#4 dial contains r / s)
+
+----- could found sound which world would (see below)
 ```
+
+How to handle the no-match (`-----`) case:
+
+`c / f / s in #1 ?` -> could / found / sound
+
+`i / r / u in #3 ?` -> which / world / would
+
 
 ## Needy
 ### Knobs
